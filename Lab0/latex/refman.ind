@@ -1,0 +1,23 @@
+\begin{theindex}
+
+  \item {main}
+    \subitem {suma.\+c}, \hyperpage{4}
+    \subitem {suma.\+cpp}, \hyperpage{5}
+
+  \indexspace
+
+  \item {suma}
+    \subitem {suma.\+py}, \hyperpage{7}
+  \item {suma.\+c}, \hyperpage{3}
+    \subitem {main}, \hyperpage{4}
+    \subitem {sumar}, \hyperpage{4}
+  \item {suma.\+cpp}, \hyperpage{4}
+    \subitem {main}, \hyperpage{5}
+    \subitem {sumar}, \hyperpage{5}
+  \item {suma.\+py}, \hyperpage{6}
+    \subitem {suma}, \hyperpage{7}
+  \item {sumar}
+    \subitem {suma.\+c}, \hyperpage{4}
+    \subitem {suma.\+cpp}, \hyperpage{5}
+
+\end{theindex}

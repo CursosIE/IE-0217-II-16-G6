@@ -1,0 +1,75 @@
+\hypertarget{suma_8cpp}{}\section{suma.\+cpp File Reference}
+\label{suma_8cpp}\index{suma.\+cpp@{suma.\+cpp}}
+
+
+Este programa realiza la suma de datos introducidos en la consola al ejecutar el mismo. Obtiene numeros introducidos por el usuario seguidamente al ejecutar el programa \hyperlink{suma_8c}{suma.\+c}++ . El usuario debe recordar compilar el programa antes de ejecutarlo. Este programa cuenta con manejo de excepciones en caso de no ingresar un dato para la suma.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{suma_8cpp_a12715f77fdf066fbd669d99ee2d8feba}{sumar} (int contador, char $\ast$sumandos\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Suma los datos ingresados. \end{DoxyCompactList}\item 
+int \hyperlink{suma_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Funcion principal del programa a ejecutar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Este programa realiza la suma de datos introducidos en la consola al ejecutar el mismo. Obtiene numeros introducidos por el usuario seguidamente al ejecutar el programa \hyperlink{suma_8c}{suma.\+c}++ . El usuario debe recordar compilar el programa antes de ejecutarlo. Este programa cuenta con manejo de excepciones en caso de no ingresar un dato para la suma. 
+
+\begin{DoxyAuthor}{Author}
+Jose Fernando Gonzalez Salas \& Isaac Gomez Sanchez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 de agosto, 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{suma_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\label{suma_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{suma.\+cpp@{suma.\+cpp}!main@{main}}
+\index{main@{main}!suma.\+cpp@{suma.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Funcion principal del programa a ejecutar. 
+
+La funcion corre el programa con los datos introducidos por el usuario e ingresa a las funciones correspondientes para obtener el resultado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Cantidad de datos ingresados por el usuario. \\
+\hline
+{\em argv} & Arreglo con los datos del usuario ingresado en la consola. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato del arreglo es el nombre del ejecutable. 
+\end{DoxyWarning}
+\hypertarget{suma_8cpp_a12715f77fdf066fbd669d99ee2d8feba}{}\label{suma_8cpp_a12715f77fdf066fbd669d99ee2d8feba} 
+\index{suma.\+cpp@{suma.\+cpp}!sumar@{sumar}}
+\index{sumar@{sumar}!suma.\+cpp@{suma.\+cpp}}
+\subsubsection{\texorpdfstring{sumar()}{sumar()}}
+{\ttfamily double sumar (\begin{DoxyParamCaption}\item[{int}]{contador,  }\item[{char $\ast$}]{sumandos\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Suma los datos ingresados. 
+
+La funcion toma el arreglo de datos del usuario y lo recorre, comenzando desde el segundo dato para evitar el nombre del ejecutable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em contador} & Cantidad de datos ingresados por el usuario. \\
+\hline
+{\em sumandos} & Arreglo con los datos del usuario para sumar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato del arreglo es el nombre del ejecutable. 
+\end{DoxyWarning}
