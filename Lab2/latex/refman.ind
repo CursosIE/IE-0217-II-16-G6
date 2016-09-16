@@ -1,0 +1,32 @@
+\begin{theindex}
+
+  \item {calcular\+Area}
+    \subitem {Circulo}, \hyperpage{10}
+    \subitem {Triangulo}, \hyperpage{21}
+  \item {calcular\+Perimetro}
+    \subitem {Circulo}, \hyperpage{11}
+    \subitem {Triangulo}, \hyperpage{21}
+  \item {Circulo}, \hyperpage{8}
+    \subitem {calcular\+Area}, \hyperpage{10}
+    \subitem {calcular\+Perimetro}, \hyperpage{11}
+    \subitem {Circulo}, \hyperpage{10}
+  \item {Cuadrado}, \hyperpage{12}
+    \subitem {Cuadrado}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Figuras}, \hyperpage{15}
+    \subitem {Figuras}, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item {main.\+cpp}, \hyperpage{23}
+
+  \indexspace
+
+  \item {Triangulo}, \hyperpage{18}
+    \subitem {calcular\+Area}, \hyperpage{21}
+    \subitem {calcular\+Perimetro}, \hyperpage{21}
+    \subitem {Triangulo}, \hyperpage{20}
+
+\end{theindex}
