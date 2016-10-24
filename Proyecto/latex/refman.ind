@@ -1,0 +1,31 @@
+\begin{theindex}
+
+  \item {blastobject}, \hyperpage{5}
+    \subitem {blastobject}, \hyperpage{5}
+    \subitem {comparador}, \hyperpage{6}
+    \subitem {gap}, \hyperpage{6}
+    \subitem {gapclear}, \hyperpage{7}
+    \subitem {raw}, \hyperpage{7}
+
+  \indexspace
+
+  \item {comparador}
+    \subitem {blastobject}, \hyperpage{6}
+
+  \indexspace
+
+  \item {gap}
+    \subitem {blastobject}, \hyperpage{6}
+  \item {gapclear}
+    \subitem {blastobject}, \hyperpage{7}
+
+  \indexspace
+
+  \item {main.\+cpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {raw}
+    \subitem {blastobject}, \hyperpage{7}
+
+\end{theindex}
