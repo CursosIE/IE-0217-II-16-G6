@@ -1,0 +1,221 @@
+\section{blastobject Class Reference}
+\label{classblastobject}\index{blastobject@{blastobject}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\label{classblastobject_a1ed96bf0cf72600743a56b37ae6e0c16} 
+{\bf blastobject} ()
+\begin{DoxyCompactList}\small\item\em Constructor vacio de clase blastobject. \end{DoxyCompactList}\item 
+{\bf blastobject} (const {\bf blastobject} \&orig)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase blastobject. \end{DoxyCompactList}\item 
+\label{classblastobject_a5dcb3ba619d57005aa6ed2169fcbf5c3} 
+virtual {\bf $\sim$blastobject} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase blastobject. \end{DoxyCompactList}\item 
+int {\bf gapclear} (char $\ast$$\ast$lista)
+\begin{DoxyCompactList}\small\item\em Retorna una secuencia con solo los caracteres similares. \end{DoxyCompactList}\item 
+int {\bf raw} (char $\ast$$\ast$lista)
+\begin{DoxyCompactList}\small\item\em Compara las secuencias de caracteres con la referencia y cuenta su puntuacion cruda. \end{DoxyCompactList}\item 
+int {\bf gap} (char $\ast$$\ast$lista, int n)
+\begin{DoxyCompactList}\small\item\em Compara las secuencias de caracteres con la referencia y cuenta sus vacios. \end{DoxyCompactList}\item 
+int {\bf repeater} (char $\ast$$\ast$lista, int n)
+\begin{DoxyCompactList}\small\item\em Divide la secuencia ingresada y la conocida en varias palabras que después se comparan. \end{DoxyCompactList}\item 
+int {\bf rescore} (char $\ast$arr\+\_\+out, char $\ast$$\ast$list, double $\ast$matrix)
+\begin{DoxyCompactList}\small\item\em Reevalúa el puntaje del array de salida para que se pueda obtener la secuencia con el mejor puntaje. \end{DoxyCompactList}\item 
+char $\ast$ {\bf extend} (int ind\+\_\+extend, int ptr\+\_\+match, int ptr\+\_\+match2, int wrd\+\_\+size, char $\ast$$\ast$list, char $\ast$arr\+\_\+out, double $\ast$matrix)
+\begin{DoxyCompactList}\small\item\em Extiende la matriz para hacer un nuevo puntaje y determniar la mejor secuencia sobre el umbral. \end{DoxyCompactList}\item 
+void {\bf printer} (char $\ast$arr\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Imprime la secuencia de la base de datos y el emparejamiento con el más alto puntaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\label{classblastobject_ad9bd5756d99478be4072818bffa2bc9e} 
+int {\bfseries rawscore}
+\item 
+\label{classblastobject_afc851d8c3cf8495abf28c707e5c28fed} 
+int {\bfseries gapcounter}
+\item 
+\label{classblastobject_a801149f5f021420528a7f2b593f9c7f0} 
+int {\bfseries size}
+\item 
+\label{classblastobject_adc4e3120d055bdd7e2ec1cb704796fdb} 
+const char $\ast$ {\bfseries base}
+\item 
+\label{classblastobject_af2e1b7b6078c139516c52ed91e4c8066} 
+int {\bfseries T}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\label{classblastobject_aa6004c11726327285515febd40f26b28} 
+\index{blastobject@{blastobject}!blastobject@{blastobject}}
+\index{blastobject@{blastobject}!blastobject@{blastobject}}
+\subsubsection{blastobject()}
+{\footnotesize\ttfamily blastobject\+::blastobject (\begin{DoxyParamCaption}\item[{const {\bf blastobject} \&}]{orig }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase blastobject. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em blastobject\&} & Constante objeto. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\label{classblastobject_aedb4c8c7bdc5fd5823003ef213681bde} 
+\index{blastobject@{blastobject}!extend@{extend}}
+\index{extend@{extend}!blastobject@{blastobject}}
+\subsubsection{extend()}
+{\footnotesize\ttfamily char $\ast$ blastobject\+::extend (\begin{DoxyParamCaption}\item[{int}]{ind\+\_\+extend,  }\item[{int}]{ptr\+\_\+match,  }\item[{int}]{ptr\+\_\+match2,  }\item[{int}]{wrd\+\_\+size,  }\item[{char $\ast$$\ast$}]{list,  }\item[{char $\ast$}]{arr\+\_\+out,  }\item[{double $\ast$}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Extiende la matriz para hacer un nuevo puntaje y determniar la mejor secuencia sobre el umbral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind\+\_\+extend} & Índice de las veces que se ha extendido la secuencia. \\
+\hline
+{\em ptr\+\_\+match2} & Posición en el cadena interrogante donde se halló el mayor puntaje. \\
+\hline
+{\em ptr\+\_\+match} & Posición en el secuencia conocida donde se halló el mayor puntaje. \\
+\hline
+{\em wrd\+\_\+size} & Tamaño de la palabra. \\
+\hline
+{\em list} & Lista ingresada por el usuario. \\
+\hline
+{\em arr\+\_\+out} & Secuencia de caracteres a extender. \\
+\hline
+{\em matrix} & Arreglo de punteros que con los puntajes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato de la lista es el nombre del ejecutable. 
+\end{DoxyWarning}
+\label{classblastobject_ae6ca5436041b743e8c20739a9f59ef91} 
+\index{blastobject@{blastobject}!gap@{gap}}
+\index{gap@{gap}!blastobject@{blastobject}}
+\subsubsection{gap()}
+{\footnotesize\ttfamily int blastobject\+::gap (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{lista,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Compara las secuencias de caracteres con la referencia y cuenta sus vacios. 
+
+La funcion recorre el arreglo ingresado para luego regresar la evaluacion correspondiente a la cantidad de vacios existentes en la secuencia comparada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Secuencia de caracteres ingresados por el usuario. \\
+\hline
+{\em n} & Variable de control para la cantidad de pasos de recorrido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato de la lista es el nombre del ejecutable. 
+\end{DoxyWarning}
+\label{classblastobject_a50f753f559096d95d75ee73ae08b846e} 
+\index{blastobject@{blastobject}!gapclear@{gapclear}}
+\index{gapclear@{gapclear}!blastobject@{blastobject}}
+\subsubsection{gapclear()}
+{\footnotesize\ttfamily int blastobject\+::gapclear (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{lista }\end{DoxyParamCaption})}
+
+
+
+Retorna una secuencia con solo los caracteres similares. 
+
+La funcion recorre el arreglo ingresado para luego imprimir la secuencia con los caracteres similares y los vacios rellenos con el simbolo de suma +.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Secuencia de caracteres ingresados por el usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato de la lista es el nombre del ejecutable. 
+\end{DoxyWarning}
+\label{classblastobject_a8a86ef19ef6a1c0f98366497d00ff0c7} 
+\index{blastobject@{blastobject}!printer@{printer}}
+\index{printer@{printer}!blastobject@{blastobject}}
+\subsubsection{printer()}
+{\footnotesize\ttfamily void blastobject\+::printer (\begin{DoxyParamCaption}\item[{char $\ast$}]{arr\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Imprime la secuencia de la base de datos y el emparejamiento con el más alto puntaje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr\+\_\+out} & Secuencia de caracteres a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato de la lista es el nombre del ejecutable. 
+\end{DoxyWarning}
+\label{classblastobject_a0426c755487823aebf8734b19e668a49} 
+\index{blastobject@{blastobject}!raw@{raw}}
+\index{raw@{raw}!blastobject@{blastobject}}
+\subsubsection{raw()}
+{\footnotesize\ttfamily int blastobject\+::raw (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{lista }\end{DoxyParamCaption})}
+
+
+
+Compara las secuencias de caracteres con la referencia y cuenta su puntuacion cruda. 
+
+La funcion recorre el arreglo ingresado para luego regresar la evaluacion correspondiente a la cantidad de puntuacion obtenida con respecto a la referencia.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Secuencia de caracteres ingresados por el usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato de la lista es el nombre del ejecutable. 
+\end{DoxyWarning}
+\label{classblastobject_a21c20ca1d5c6e628a000c66f046e4163} 
+\index{blastobject@{blastobject}!repeater@{repeater}}
+\index{repeater@{repeater}!blastobject@{blastobject}}
+\subsubsection{repeater()}
+{\footnotesize\ttfamily int blastobject\+::repeater (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{list,  }\item[{int}]{wrd\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Divide la secuencia ingresada y la conocida en varias palabras que después se comparan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Datos ingresados por el usuaio. \\
+\hline
+{\em wrd\+\_\+size} & Tamaño de cada palabra. \\
+\hline
+\end{DoxyParams}
+\label{classblastobject_af1276716ef8334ef5adff67ad1cb8171} 
+\index{blastobject@{blastobject}!rescore@{rescore}}
+\index{rescore@{rescore}!blastobject@{blastobject}}
+\subsubsection{rescore()}
+{\footnotesize\ttfamily int blastobject\+::rescore (\begin{DoxyParamCaption}\item[{char $\ast$}]{arr\+\_\+out,  }\item[{char $\ast$$\ast$}]{list,  }\item[{double $\ast$}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Reevalúa el puntaje del array de salida para que se pueda obtener la secuencia con el mejor puntaje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Lista ingresada por el usuario. \\
+\hline
+{\em arr\+\_\+out} & Secuencia de caracteres a extender. \\
+\hline
+{\em matrix} & Arreglo de punteros que con los puntajes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+El primer dato de la lista es el nombre del ejecutable. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+blastobject.\+h\item 
+blastobject.\+cpp\end{DoxyCompactItemize}
