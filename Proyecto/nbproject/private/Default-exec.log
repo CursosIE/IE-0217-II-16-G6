@@ -1,9 +1,0 @@
-called: g++
-	/home/hgeihsen/Documents/Ing.Electrica/Estructuras_Abstractas/Proyecto1/BLAST
-	g++
-	-o
-	a.out
-	main.cpp
-	blastobject.cpp
-	getmatrix.cpp
-
