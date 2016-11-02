@@ -1,31 +1,52 @@
-#include <cstdlib>
 #include "ListaConArreglo.h"
 #include "Pila.h"
+#include "Lista.h"
+#include "Mesa.h"
+#include "admision.h"
+
+
 using namespace std;
 
 int main(int argc, char** argv) {
 
-    Pila * p= new Pila();
-    
-    for (int i=0; i<argc; i++){
-        if (argv[1][i]== '(') {
-            p->agregar(5.5);
+    //admision(argv,7);
+
+
+    Mesa m1, m2, m3;
+
+    ListaConArreglo<char>*Admision = new ListaConArreglo<char>();
+    Admision = admision(argv, 7);
+
+    while (Admision->vacio() == false) {
+
+        if (m1.lleno() != true && Admision->vacio() == false) {
+            cout << endl << "Mesa m1." << endl;
+            m1.llenar(Admision);
+            cout << endl << "Blackjack m1." << endl;
+            m1.Blackjack(Admision);
+             cout << "Cola de admision restante: ";
+            Admision->imprimir();
+
+        } else if (m2.lleno() != true && Admision->vacio() == false) {
+           
+            cout << endl << "Mesa m2." << endl;
+            m2.llenar(Admision);
+            cout << endl << "Blackjack m2." << endl;
+            m2.Blackjack(Admision);
+        } else if (m3.lleno() != true && Admision->vacio() == false) {
+            cout << endl << "Mesa m3." << endl;
+            m3.llenar(Admision);
+            cout << endl << "Blackjack m3." << endl;
+            m2.Blackjack(Admision);
         }
-        else if (argv[1][i] == ')') {
-            p->eliminarK(i);
-        }
-        else {
-            cout << "No es un parentesis" << endl;
-        }
+        cout << endl << "Tamaño de Admision: " << Admision->tam << endl;
+
     }
-    
-    if (p->tam == 0){
-        cout << "Todo bien" << endl;
-    }
-    else {
-        cout << "Error" << endl;
-    }
-    
+
+    cout << "Salida de while en el main" << endl;
+
     return 0;
+
+
 }
 

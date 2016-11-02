@@ -1,8 +1,11 @@
 compile:
-	g++ -o a.out main.cpp ListaConArreglo.cpp Lista.cpp Pila.cpp Zelda.cpp
+	g++ -Wall main.cpp Mesa.cpp admision.cpp -o a.out
 
 clean:
 	rm a.out
 
+debugg:
+	g++ -g main.cpp Mesa.cpp admision.cpp -o debuger
+	
 execute: compile
-	./a.out $(filter-out $@,$(MAKECMDGOALS))
+	./a.out EETDTET

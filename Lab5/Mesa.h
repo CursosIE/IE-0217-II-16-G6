@@ -1,39 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Mesa.h
- * Author: hgeihsen
- *
- * Created on October 30, 2016, 7:42 AM
- */
 
 #ifndef MESA_H
 #define MESA_H
-
+#include "ListaConArreglo.h"
+#include "Lista.h"
 #include "Pila.h"
+#include "admision.h"
 
 class Mesa {
 public:
     Mesa();
-    Mesa(const Mesa& orig);
-    Mesa(char participante);
+    Mesa(/*ListaConArreglo* admision,*/ int N);
+    Mesa(const Mesa& orig);    
     virtual ~Mesa();
     
-    int Blackjack();
-    void agregar_jugador(double e);
-    void sacar_jugador();
+    void Blackjack(ListaConArreglo<char>* admision);
+    void agregar_jugador(ListaConArreglo<char>* admision);
+    void sacar_jugador(int i);
     void barajar();
+    bool lleno();
+    void llenar(ListaConArreglo<char>* Admision);
+    void vaciar();
     // repartir();
     
-    
-    Pila* jugadores;
+    ListaConArreglo<char>*jugadores;
+    ListaConArreglo<int>* puntajes;
     int ronda;
 private:
-    Pila* baraja;
+    Pila<int>* baraja;
     
 };
 
