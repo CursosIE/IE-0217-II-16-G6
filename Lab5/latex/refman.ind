@@ -1,0 +1,59 @@
+\begin{theindex}
+
+  \item {agregar}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{9}
+  \item {agregar\+\_\+jugador}
+    \subitem {Mesa}, \hyperpage{12}
+  \item {agregark}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Blackjack}
+    \subitem {Mesa}, \hyperpage{12}
+  \item {buscar}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{9}
+
+  \indexspace
+
+  \item {eliminar}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{9}
+  \item {eliminarK}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Lista$<$ T $>$}, \hyperpage{5}
+  \item {Lista\+Con\+Arreglo}
+    \subitem {agregar}, \hyperpage{9}
+    \subitem {agregark}, \hyperpage{9}
+    \subitem {buscar}, \hyperpage{9}
+    \subitem {eliminar}, \hyperpage{9}
+    \subitem {eliminarK}, \hyperpage{10}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{7}
+    \subitem {sumark}, \hyperpage{10}
+  \item {Lista\+Con\+Arreglo$<$ T $>$}, \hyperpage{6}
+  \item {llenar}
+    \subitem {Mesa}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Mesa}, \hyperpage{11}
+    \subitem {agregar\+\_\+jugador}, \hyperpage{12}
+    \subitem {Blackjack}, \hyperpage{12}
+    \subitem {llenar}, \hyperpage{13}
+    \subitem {Mesa}, \hyperpage{12}
+    \subitem {sacar\+\_\+jugador}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Pila$<$ T $>$}, \hyperpage{13}
+
+  \indexspace
+
+  \item {sacar\+\_\+jugador}
+    \subitem {Mesa}, \hyperpage{13}
+  \item {sumark}
+    \subitem {Lista\+Con\+Arreglo}, \hyperpage{10}
+
+\end{theindex}

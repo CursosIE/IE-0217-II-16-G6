@@ -1,0 +1,155 @@
+\hypertarget{class_mesa}{}\section{Mesa Class Reference}
+\label{class_mesa}\index{Mesa@{Mesa}}
+
+
+Collaboration diagram for Mesa\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_mesa__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mesa_a98794038db53804cb4295480c96b2c20}{}\label{class_mesa_a98794038db53804cb4295480c96b2c20} 
+\hyperlink{class_mesa_a98794038db53804cb4295480c96b2c20}{Mesa} ()
+\begin{DoxyCompactList}\small\item\em Constructor de clase \hyperlink{class_mesa}{Mesa}. \end{DoxyCompactList}\item 
+\hyperlink{class_mesa_a8cb7a7932e52b13242eaa5ade9f646cb}{Mesa} (int N)
+\begin{DoxyCompactList}\small\item\em Constructor de clase \hyperlink{class_mesa}{Mesa} sobrecargado. \end{DoxyCompactList}\item 
+\hyperlink{class_mesa_af28f64b3a29b75d2a281dbc1d439a74e}{Mesa} (const \hyperlink{class_mesa}{Mesa} \&orig)
+\begin{DoxyCompactList}\small\item\em Imprime una cadena de caracteres dada por el usuario. \end{DoxyCompactList}\item 
+\hypertarget{class_mesa_aa0a1b83b8058f80f4f27ec46cc5e9524}{}\label{class_mesa_aa0a1b83b8058f80f4f27ec46cc5e9524} 
+virtual \hyperlink{class_mesa_aa0a1b83b8058f80f4f27ec46cc5e9524}{$\sim$\+Mesa} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \hyperlink{class_mesa}{Mesa}. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesa_a567e239c0dedc7d2aadb0633b4f1580b}{Blackjack} (\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$admision)
+\begin{DoxyCompactList}\small\item\em Funcion principal de distribucion para el juego de Blackjack. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesa_ad8160d20365c5d6e8434e2ebd2c75b06}{agregar\+\_\+jugador} (\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$admision)
+\begin{DoxyCompactList}\small\item\em Agrega jugador a la mesa de juego. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesa_a6b366909106ac813211e0e36703dc1b1}{sacar\+\_\+jugador} (int i)
+\begin{DoxyCompactList}\small\item\em Elimina jugador a la mesa de juego. \end{DoxyCompactList}\item 
+\hypertarget{class_mesa_a35761c94c89ffcd57873b981428391db}{}\label{class_mesa_a35761c94c89ffcd57873b981428391db} 
+void \hyperlink{class_mesa_a35761c94c89ffcd57873b981428391db}{barajar} ()
+\begin{DoxyCompactList}\small\item\em Prepara las cartas para el juego. \end{DoxyCompactList}\item 
+\hypertarget{class_mesa_a67c92e9165893fcdb496f37fae7fe30c}{}\label{class_mesa_a67c92e9165893fcdb496f37fae7fe30c} 
+bool \hyperlink{class_mesa_a67c92e9165893fcdb496f37fae7fe30c}{lleno} ()
+\begin{DoxyCompactList}\small\item\em Revisa si la mesa esta llena o no. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesa_a1aafcc25c473a282495a4c7043fb42de}{llenar} (\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$Admision)
+\begin{DoxyCompactList}\small\item\em Llena las mesas para el juego. \end{DoxyCompactList}\item 
+\hypertarget{class_mesa_ac7098158c1fcdf3846494d65b5ff6f06}{}\label{class_mesa_ac7098158c1fcdf3846494d65b5ff6f06} 
+void \hyperlink{class_mesa_ac7098158c1fcdf3846494d65b5ff6f06}{vaciar} ()
+\begin{DoxyCompactList}\small\item\em Vacia la mesa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mesa_a7ccf2ba385f9a7b167b7f262ed1b1d91}{}\label{class_mesa_a7ccf2ba385f9a7b167b7f262ed1b1d91} 
+\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$ {\bfseries jugadores}
+\item 
+\hypertarget{class_mesa_af3babe5df4e164206cf5c32138fb3516}{}\label{class_mesa_af3babe5df4e164206cf5c32138fb3516} 
+\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ int $>$ $\ast$ {\bfseries puntajes}
+\item 
+\hypertarget{class_mesa_a1fc67802b221fd42d6a979c2bfc4833d}{}\label{class_mesa_a1fc67802b221fd42d6a979c2bfc4833d} 
+int {\bfseries ronda}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mesa_a8cb7a7932e52b13242eaa5ade9f646cb}{}\label{class_mesa_a8cb7a7932e52b13242eaa5ade9f646cb} 
+\index{Mesa@{Mesa}!Mesa@{Mesa}}
+\index{Mesa@{Mesa}!Mesa@{Mesa}}
+\subsubsection{\texorpdfstring{Mesa()}{Mesa()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\ttfamily Mesa\+::\+Mesa (\begin{DoxyParamCaption}\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Constructor de clase \hyperlink{class_mesa}{Mesa} sobrecargado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & dimension del arreglo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mesa_af28f64b3a29b75d2a281dbc1d439a74e}{}\label{class_mesa_af28f64b3a29b75d2a281dbc1d439a74e} 
+\index{Mesa@{Mesa}!Mesa@{Mesa}}
+\index{Mesa@{Mesa}!Mesa@{Mesa}}
+\subsubsection{\texorpdfstring{Mesa()}{Mesa()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\ttfamily Mesa\+::\+Mesa (\begin{DoxyParamCaption}\item[{const \hyperlink{class_mesa}{Mesa} \&}]{orig }\end{DoxyParamCaption})}
+
+
+
+Imprime una cadena de caracteres dada por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Mesa\&} & Objeto del tipo \hyperlink{class_mesa}{Mesa}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mesa_ad8160d20365c5d6e8434e2ebd2c75b06}{}\label{class_mesa_ad8160d20365c5d6e8434e2ebd2c75b06} 
+\index{Mesa@{Mesa}!agregar\+\_\+jugador@{agregar\+\_\+jugador}}
+\index{agregar\+\_\+jugador@{agregar\+\_\+jugador}!Mesa@{Mesa}}
+\subsubsection{\texorpdfstring{agregar\+\_\+jugador()}{agregar\_jugador()}}
+{\ttfamily void Mesa\+::agregar\+\_\+jugador (\begin{DoxyParamCaption}\item[{\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$}]{admision }\end{DoxyParamCaption})}
+
+
+
+Agrega jugador a la mesa de juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Admision} & \hyperlink{class_lista}{Lista} de personas por entrar al juego. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mesa_a567e239c0dedc7d2aadb0633b4f1580b}{}\label{class_mesa_a567e239c0dedc7d2aadb0633b4f1580b} 
+\index{Mesa@{Mesa}!Blackjack@{Blackjack}}
+\index{Blackjack@{Blackjack}!Mesa@{Mesa}}
+\subsubsection{\texorpdfstring{Blackjack()}{Blackjack()}}
+{\ttfamily void Mesa\+::\+Blackjack (\begin{DoxyParamCaption}\item[{\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$}]{Admision }\end{DoxyParamCaption})}
+
+
+
+Funcion principal de distribucion para el juego de Blackjack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Admision} & \hyperlink{class_lista}{Lista} de personas por entrar al juego. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mesa_a1aafcc25c473a282495a4c7043fb42de}{}\label{class_mesa_a1aafcc25c473a282495a4c7043fb42de} 
+\index{Mesa@{Mesa}!llenar@{llenar}}
+\index{llenar@{llenar}!Mesa@{Mesa}}
+\subsubsection{\texorpdfstring{llenar()}{llenar()}}
+{\ttfamily void Mesa\+::llenar (\begin{DoxyParamCaption}\item[{\hyperlink{class_lista_con_arreglo}{Lista\+Con\+Arreglo}$<$ char $>$ $\ast$}]{Admision }\end{DoxyParamCaption})}
+
+
+
+Llena las mesas para el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Admision} & \hyperlink{class_lista}{Lista} de personas por entrar al juego. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mesa_a6b366909106ac813211e0e36703dc1b1}{}\label{class_mesa_a6b366909106ac813211e0e36703dc1b1} 
+\index{Mesa@{Mesa}!sacar\+\_\+jugador@{sacar\+\_\+jugador}}
+\index{sacar\+\_\+jugador@{sacar\+\_\+jugador}!Mesa@{Mesa}}
+\subsubsection{\texorpdfstring{sacar\+\_\+jugador()}{sacar\_jugador()}}
+{\ttfamily void Mesa\+::sacar\+\_\+jugador (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Elimina jugador a la mesa de juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Orden del jugador. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mesa.\+h\item 
+Mesa.\+cpp\end{DoxyCompactItemize}

@@ -1,9 +1,5 @@
 #include "Mesa.h"
 
-/**
- * @brief Constructor de clase Mesa.
- *
- */
 Mesa::Mesa() {
     puntajes = new ListaConArreglo<int>();
     jugadores = new ListaConArreglo<char>();
@@ -13,11 +9,6 @@ Mesa::Mesa() {
 
 }
 
-/**
- * @brief Constructor de clase Mesa sobrecargado.
- *
- * @param N dimension del arreglo.
- */
 Mesa::Mesa(/*ListaConArreglo* admision,*/ int N) {
 
     this->puntajes = new ListaConArreglo<int>(N); 
@@ -25,26 +16,12 @@ Mesa::Mesa(/*ListaConArreglo* admision,*/ int N) {
 
 }
 
-/**
- * @brief Imprime una cadena de caracteres dada por el usuario.
- *
- * @param Mesa& Objeto del tipo Mesa.
- */
 Mesa::Mesa(const Mesa& orig) {
 }
 
-/**
- * @brief Destructor de la clase Mesa.
- *
- */
 Mesa::~Mesa() {
 }
 
-/**
- * @brief Funcion principal de distribucion para el juego de Blackjack.
- *
- * @param Admision Lista de personas por entrar al juego.
- */
 void Mesa::Blackjack(ListaConArreglo<char>* Admision) {
 
     
@@ -114,11 +91,6 @@ void Mesa::Blackjack(ListaConArreglo<char>* Admision) {
 
 }
 
-/**
- * @brief Agrega jugador a la mesa de juego.
- *
- * @param Admision Lista de personas por entrar al juego.
- */
 void Mesa::agregar_jugador(ListaConArreglo<char>* admision) {
     jugadores->agregar(admision->recuperar(admision->tam - 1));
     admision->eliminarK(admision->tam - 1);
@@ -131,11 +103,6 @@ void Mesa::agregar_jugador(ListaConArreglo<char>* admision) {
     cout << endl;
 }
 
-/**
- * @brief Elimina jugador a la mesa de juego.
- *
- * @param i Orden del jugador.
- */
 void Mesa::sacar_jugador(int i) {
     jugadores->eliminarK(i);
     puntajes->eliminarK(i);
@@ -147,10 +114,6 @@ void Mesa::sacar_jugador(int i) {
     cout << endl;
 }
 
-/**
- * @brief Prepara las cartas para el juego.
- *
- */
 void Mesa::barajar() {
     //baraja= 0;
     //this->baraja=new Pila<int>();
@@ -178,10 +141,6 @@ void Mesa::barajar() {
     //this->baraja->imprimir();
 }
 
-/**
- * @brief Revisa si la mesa esta llena o no.
- *
- */
 bool Mesa::lleno() {
     if (this->jugadores->tam == 3) {
         return true;
@@ -190,11 +149,6 @@ bool Mesa::lleno() {
     }
 }
 
-/**
- * @brief Llena las mesas para el juego.
- *
- * @param Admision Lista de personas por entrar al juego.
- */
 void Mesa::llenar(ListaConArreglo<char>* Admision) {
     //cout << "Tamaño de admsion al entrar a llenar(): " << Admision->tam << endl;
     while (this->lleno() != true && Admision->vacio() == false) {
@@ -205,10 +159,6 @@ void Mesa::llenar(ListaConArreglo<char>* Admision) {
     //cout << "Tamaño de admsion tras salir de llenar(): " << Admision->tam << endl;
 }
 
-/**
- * @brief Vacia la mesa.
- *
- */
 void Mesa::vaciar() {
     //cout << "Tamaño de jugadores al entrar a vaciar(): " << this->jugadores->tam << endl;
     while (this->jugadores->tam != 0) {

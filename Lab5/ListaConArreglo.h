@@ -5,25 +5,52 @@
 #include <iostream>
 #include "Lista.h"
 
+/**
+ * @brief Plantilla para construir una Lista basada en arreglos.
+ *
+ */
 template <class T>
 class ListaConArreglo : public Lista<T> {
 public:
 
+/**
+ * @brief Constructor de ListaConArreglo.
+ *
+ */
     ListaConArreglo() {
     };
 
+/**
+ * @brief Constructor sobrecargado de la clase ListaConArreglo.
+ *
+ * @param N Dimension de Lista.
+ */
     ListaConArreglo(int N) {
         this->data = new T[N];
         tam = N;
         ultimo = tam - 1;
     };
 
+/**
+ * @brief Constructor sobrecargado de la clase ListaConArreglo.
+ *
+ * @param ListaConArreglo& Objeto del tipo ListaConArreglo.
+ */
     ListaConArreglo(const ListaConArreglo& orig) {
     };
 
+/**
+ * @brief Destructor de la clase ListaConArreglo.
+ *
+ */
     ~ListaConArreglo() {
     };
 
+/**
+ * @brief Agrega un elemento.
+ *
+ * @param &e Elemento por agregar.
+ */
     void agregar(const T &e) {
         if (data == 0) {
             data = new T[1];
@@ -52,6 +79,12 @@ public:
         }
     };
 
+/**
+ * @brief Suma un elemento.
+ *
+ * @param k Elemento al cual sumar.
+ * @param &e Elemento por sumar
+ */
     void sumark(int k, const T &e) {
         T* temp = new T[tam * 2];
         for (int i = 0; i < tam; i++) {
@@ -65,6 +98,12 @@ public:
         data = temp;
     };
 
+/**
+ * @brief Agrega en una posicion un elemento.
+ *
+ * @param k Posicion.
+ * @param &e Elemento por agregar.
+ */
     void agregark(int k, const T &e) {
         T* temp = new T[tam * 2];
         for (int i = 0; i < tam; i++) {
@@ -78,11 +117,21 @@ public:
         data = temp;
     };
 
+/**
+ * @brief Elimina un elemento.
+ *
+ * @param &e Elemento por eliminar
+ */
     void eliminar(const T &e) {
         int k = buscar(e);
         eliminarK(k);
     };
 
+/**
+ * @brief Elimina una posicion.
+ *
+ * @param k Posicion.
+ */
     void eliminarK(int k) {
         for (int i = k; i < tam - 1; i++) {
             data[i] = data[i + 1];
@@ -91,6 +140,11 @@ public:
         ultimo--;
     };
 
+/**
+ * @brief Busca un elemento.
+ *
+ * @param &e Elemento por buscar.
+ */
     int buscar(const T &e) {
         for (int i = 0; i < tam; i++) {
             if (data[i] == e) {
@@ -121,6 +175,10 @@ public:
         return data[k];
     };
 
+/**
+ * @brief Imprime la lista.
+ *
+ */
     void imprimir() {
         for (int i = 0; i < tam; i++) {
             std::cout << data[i] << "\t";

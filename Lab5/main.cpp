@@ -6,7 +6,12 @@
 
 
 using namespace std;
-
+/**
+ * @brief Ejecuta el programa.
+ *
+ * @param argc Lista de personas por entrar al juego.
+ * @param argv Argumentos del usuario.
+ */
 int main(int argc, char** argv) {
 
     //admision(argv,7);
