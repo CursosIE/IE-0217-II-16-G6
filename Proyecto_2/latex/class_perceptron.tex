@@ -1,0 +1,104 @@
+\section{Perceptron Class Reference}
+\label{class_perceptron}\index{Perceptron@{Perceptron}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_perceptron_a5b8f94d3ec951f153774575e2acdf582} 
+{\bf Perceptron} ()
+\begin{DoxyCompactList}\small\item\em Constructor de clase \doxyref{Perceptron}{p.}{class_perceptron}. \end{DoxyCompactList}\item 
+{\bf Perceptron} (vector$<$ {\bf Punto} $\ast$$>$ vec)
+\begin{DoxyCompactList}\small\item\em Constructor sobrecargado de clase \doxyref{Perceptron}{p.}{class_perceptron}. \end{DoxyCompactList}\item 
+{\bf Perceptron} (const {\bf Perceptron} \&orig)
+\begin{DoxyCompactList}\small\item\em Constructor sobrecargado de clase Mesa. \end{DoxyCompactList}\item 
+\label{class_perceptron_a0267e40e981df9907129d858911840e7} 
+virtual {\bf $\sim$\+Perceptron} ()
+\begin{DoxyCompactList}\small\item\em Destructor de clase Mesa. \end{DoxyCompactList}\item 
+double {\bf dot\+Product} (vector$<$ {\bf Punto} $\ast$$>$ vec, vector$<$ double $>$ w, int order)
+\begin{DoxyCompactList}\small\item\em Realiza el producto punto de dos objetos especificos. Usa un vector transpuesto de pesos y un orden que identifica el punto. \end{DoxyCompactList}\item 
+void {\bf learn} (double n, vector$<$ {\bf Punto} $\ast$$>$ vec0, vector$<$ {\bf Punto} $\ast$$>$ vec1)
+\begin{DoxyCompactList}\small\item\em Ejecuta el algoritmo de aprendizaje \doxyref{Perceptron}{p.}{class_perceptron}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_perceptron_a618ee18b32c7721249914ba1c2cfb133} 
+vector$<$ {\bf Punto} $\ast$ $>$ {\bfseries puntos}
+\item 
+\label{class_perceptron_a22ecadfdd44d094e1e90c9e0373f4d09} 
+vector$<$ double $>$ {\bfseries w}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\label{class_perceptron_a15cc6ac2d55000e229dbeae6fc60f8cc} 
+\index{Perceptron@{Perceptron}!Perceptron@{Perceptron}}
+\index{Perceptron@{Perceptron}!Perceptron@{Perceptron}}
+\subsubsection{Perceptron()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Perceptron\+::\+Perceptron (\begin{DoxyParamCaption}\item[{vector$<$ {\bf Punto} $\ast$$>$}]{vec }\end{DoxyParamCaption})}
+
+
+
+Constructor sobrecargado de clase \doxyref{Perceptron}{p.}{class_perceptron}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & Vector de puntos definido por el usuario \\
+\hline
+\end{DoxyParams}
+\label{class_perceptron_a2ce9d48f9403941f30be9580ad941e00} 
+\index{Perceptron@{Perceptron}!Perceptron@{Perceptron}}
+\index{Perceptron@{Perceptron}!Perceptron@{Perceptron}}
+\subsubsection{Perceptron()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Perceptron\+::\+Perceptron (\begin{DoxyParamCaption}\item[{const {\bf Perceptron} \&}]{orig }\end{DoxyParamCaption})}
+
+
+
+Constructor sobrecargado de clase Mesa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Perceptron\&} & Objeto del tipo \doxyref{Perceptron}{p.}{class_perceptron} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\label{class_perceptron_a3f0c29e378fdf91f87507cd20a489821} 
+\index{Perceptron@{Perceptron}!dot\+Product@{dot\+Product}}
+\index{dot\+Product@{dot\+Product}!Perceptron@{Perceptron}}
+\subsubsection{dot\+Product()}
+{\footnotesize\ttfamily double Perceptron\+::dot\+Product (\begin{DoxyParamCaption}\item[{vector$<$ {\bf Punto} $\ast$$>$}]{vec,  }\item[{vector$<$ double $>$}]{w,  }\item[{int}]{order }\end{DoxyParamCaption})}
+
+
+
+Realiza el producto punto de dos objetos especificos. Usa un vector transpuesto de pesos y un orden que identifica el punto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & Vector de puntos definido por el usuario \\
+\hline
+{\em w} & Vector de pesos \\
+\hline
+\end{DoxyParams}
+\label{class_perceptron_a7a327d9433f4c668882aaf8c707a96c0} 
+\index{Perceptron@{Perceptron}!learn@{learn}}
+\index{learn@{learn}!Perceptron@{Perceptron}}
+\subsubsection{learn()}
+{\footnotesize\ttfamily void Perceptron\+::learn (\begin{DoxyParamCaption}\item[{double}]{n,  }\item[{vector$<$ {\bf Punto} $\ast$$>$}]{vec0,  }\item[{vector$<$ {\bf Punto} $\ast$$>$}]{vec1 }\end{DoxyParamCaption})}
+
+
+
+Ejecuta el algoritmo de aprendizaje \doxyref{Perceptron}{p.}{class_perceptron}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Tamano de umbral (threshold) \\
+\hline
+{\em vec} & Vector de puntos definido por el usuario \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Perceptron.\+h\item 
+Perceptron.\+cpp\end{DoxyCompactItemize}
